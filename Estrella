@@ -1,0 +1,16 @@
+import turtle
+
+def estrella(puntas):
+    t = turtle.Turtle()
+    
+    angulo = 180 - (180 / puntas)
+
+    for i in range(puntas):
+        t.forward(150)
+        t.right(angulo)
+
+puntas = int(input("Introduce el número de puntas de la estrella: "))
+
+estrella(puntas)
+
+turtle.done()
