@@ -1,0 +1,20 @@
+n = 5
+laberinto = [[" " for i in range(n)] for i in range(n)]
+muros = ((0,1),(0,2),(0,3),(0,4),
+         (1,1),
+         (2,1),(2,3),
+         (3,3),
+         (4,0),(4,1),(4,2),(4,3))
+for f,c in muros:
+    laberinto[f][c] = "X"
+laberinto[0][0] = "E"
+laberinto[4][4] = "S"
+for fila in laberinto:
+    print(fila)
+movimientos = [
+"Abajo","Abajo","Abajo",
+"Derecha","Derecha",
+"Arriba",
+"Derecha","Derecha",
+"Abajo","Abajo"]
+print(movimientos)
